@@ -1,0 +1,23 @@
+// c program to print all those numbers from 1 upto n which are divisible by k and also print evensum and oddsum from those divisible.
+#include<stdio.h>
+void main()
+{
+	int n,i,k,es=0,os=0;
+	printf("enter a number");
+	scanf("%d",&n);
+	printf("enter a number to which you want find multiples in the given range");
+	scanf("%d",&k);
+	for(i=1;i<=n;i++)
+	{
+		if(i%k==0)
+		{
+			printf("%d\t",i);
+			if(i%2==0)
+			es=es+i;
+			else
+			os=os+i;	
+		}
+	}
+	printf("\n%d\t%d",es,os);
+}
+ 
